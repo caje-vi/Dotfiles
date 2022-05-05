@@ -78,8 +78,7 @@ set clipboard=unnamed
 " prevents truncated yanks, deletes, etc.                                       
 set viminfo='20,<1000,s1000
 " disable search highlighting with <C-L> when refreshing screen                 
-nnoremap <C-L> :nohl<CR><C-L>
-nnoremap <C-L> :nohlsearch<CR><C-L>
+nnoremap <C-S> :nohl<CR><C-S>
 
 " navigating between buffers
 nnoremap gb :ls<CR>:b<Space>
