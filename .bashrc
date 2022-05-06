@@ -33,6 +33,7 @@ alias \
     rm="rm -v" \
     mkdir="mkdir -pv" \
     g="git" \
+    t="tmux"\
     sdn="sudo shutdown -h now" \
     vim="nvim"\
     v="nvim" \
