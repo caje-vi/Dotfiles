@@ -35,7 +35,6 @@ alias \
     g="git" \
     t="tmux"\
     sdn="sudo shutdown -h now" \
-    vim="nvim"\
     v="nvim" \
     z="v $(date -u +%Y%m%d%H%M%S).md" \
     config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"\
