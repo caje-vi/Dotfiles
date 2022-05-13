@@ -38,6 +38,7 @@ alias \
     v="nvim" \
     z="v $(date -u +%Y%m%d%H%M%S).md" \
     config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"\
+    book="/usr/bin/git --git-dir=$HOME/.bookmarks/ --work-tree=$HOME"\
     nb="newsboat"\
 
 \
