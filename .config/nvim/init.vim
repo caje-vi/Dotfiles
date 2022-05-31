@@ -1,4 +1,12 @@
 set nocompatible
+
+if has('autocmd')
+  if has('spell')
+    au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
+  endif
+  au BufNewFile,BufRead COMMIT_EDITMSG call feedkeys('ggi', 't')
+endif
+
 " auto-install vim-plug
 
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
