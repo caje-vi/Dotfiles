@@ -8,6 +8,7 @@ window:
   dynamic_padding: false
   decorations: none
   startup_mode: Fullscreen
+  opacity: 0.8
 
 tabspaces: 2
 
@@ -76,7 +77,6 @@ bell:
   duration: 0
 
 transparent_background_colors: true
-window.opacity: 1
 
 mouse:
   double_click: { threshold: 300 }
