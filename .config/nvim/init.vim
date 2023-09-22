@@ -83,7 +83,7 @@ set linebreak
 set cursorline
 
 " Shared clipboard
-set clipboard=unnamed
+set clipboard+=unnamedplus
 " prevents truncated yanks, deletes, etc.                                       
 set viminfo='20,<1000,s1000
 " disable search highlighting with <C-L> when refreshing screen                 
