@@ -65,6 +65,8 @@ set termguicolors
 set showcmd
 set background=dark
 colorscheme gruvbox
+highlight! Normal ctermbg=NONE guibg=NONE
+highlight! EndOfBuffer ctermbg=NONE guibg=NONE
 let g:rainbow_active = 1
 set tabstop=4
 set softtabstop=4
