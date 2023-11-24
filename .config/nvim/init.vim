@@ -6,7 +6,7 @@ if has('autocmd')
   endif
   au BufNewFile,BufRead COMMIT_EDITMSG call feedkeys('ggi', 't')
 endif
-
+    
 " auto-install vim-plug
 
 if empty(glob('~/.config/nvim/autoload/plug.vim'))

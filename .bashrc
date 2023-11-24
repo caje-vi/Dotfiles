@@ -41,6 +41,7 @@ alias \
     config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"\
     book="/usr/bin/git --git-dir=$HOME/.bookmarks/ --work-tree=$HOME"\
     nb="newsboat"\
+    chrome="google-chrome-stable"\
 
 \
 
