@@ -118,4 +118,4 @@ The magic is in the Git alias that points to a bare repository in `~/.cfg` while
 
 ---
 
-*Based on the technique from [Atlassian's dotfiles tutorial](https://www.atlassian.com/git/tutorials/dotfiles)*
+*Based on the technique from a [Hacker News thread](https://news.ycombinator.com/item?id=11071754)*
