@@ -13,12 +13,10 @@ export TERMINAL='alacritty'
 export BROWSER='firefox'
 export pager='less'
 
-
 export PS1=" \[\e[00;34m\]λ \W \[\e[0m\]"
 
 ##### CAPS #####
   setxkbmap -option caps:escape &>/dev/null
-
 
 ###### ALIAS ######
 
@@ -34,14 +32,15 @@ alias \
     mkdir="mkdir -pv" \
     g="git" \
     t="tmux"\
-    sdn="sudo shutdown -h now" \
+    sdn="shutdown -h now" \
     v="nvim" \
-    browser="google-chrome-stable"\
+    nv="nvim" \
+    nb="newsboat"\
     z="v $(date -u +%Y%m%d%H%M%S).md" \
     config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"\
     book="/usr/bin/git --git-dir=$HOME/.bookmarks/ --work-tree=$HOME"\
-    nb="newsboat"\
     chrome="google-chrome-stable"\
+    browser="google-chrome-stable"\
 
 \
 
@@ -67,4 +66,4 @@ ex ()
   fi
 }
 
-colorscript -r
+rustmon print -p 0
