@@ -4,7 +4,7 @@ A clean, elegant approach to managing your dotfiles using a bare Git repository.
 
 ## What is this?
 
-I found this method quite some time ago, but with the fear of the link going broke and to maintain my own version of it, i made this repo. It uses a bare Git repository stored in a "side" folder (like `~/.cfg`) with a special alias to track your configuration files directly in your home directory. The technique consists of storing a Git bare repository in a "side" folder (like $HOME/.cfg or $HOME/.myconfig) using a specially crafted alias so that commands are run against that repository and not the usual .git local folder
+I found this method quite some time ago, but with the fear of the link going broke and to maintain my own version of it, i made this repo. It uses a bare Git repository stored in a "side" folder (like `~/.cfg`) with a special alias to track your configuration files directly in your home directory.
 
 ## Advantages
 
