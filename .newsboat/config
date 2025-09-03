@@ -3,6 +3,7 @@ auto-reload yes
 reload-threads 100
 reload-time 30
 max-items 50
+error-log "~/.newsboat/error.log"
 
 #install -y xdg-utils
 browser "xdg-open %u"
