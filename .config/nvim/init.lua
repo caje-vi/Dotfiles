@@ -1,6 +1,5 @@
 --Basic
 vim.opt.wildignorecase = true
-
 -- Text settings
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -24,11 +23,15 @@ vim.opt.foldlevel = 99
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.opt.inccommand = 'split'
-
 -- Plugins
 vim.pack.add({
     {src = "https://github.com/catppuccin/nvim"},
+    {src = "https://github.com/neovim/nvim-lspconfig"},
 })
+--AutoComplete
+
+--LSP
+vim.lsp.enable('pyright', 'clangd', 'lua_ls')
 
 -- Colorscheme
 vim.cmd.colorscheme "catppuccin"
