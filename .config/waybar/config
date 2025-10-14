@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "margin-bottom": -10,
+    "margin-bottom": 0,
 
     "spacing": 0,
 
@@ -16,17 +16,12 @@
         "memory",
         "cpu",
         "battery",
-        //"pulseaudio",
-        "wireplumber",
+        "pulseaudio",
         "custom/screenshot_t",
         "tray",
-        "custom/power"
+        "network",
+        "custom/power",
     ],
-
-
-    // -------------------------------------------------------------------------
-    // Modules
-    // -------------------------------------------------------------------------
 
     "custom/sp1": {
         "format": " | ",
@@ -40,8 +35,8 @@
 
     "custom/screenshot_t":{
         "format":" ",
-        "on-click": "~/.config/hypr/scripts/screenshot_full",
-        "on-click-right":"~/.config/hypr/scripts/screenshot_area"
+        "on-click": "hyprshot -m window",
+        "on-click-right":"hyprshot -m region"
     },
 
     "memory": {
@@ -69,7 +64,7 @@
         ]
     },
     "network": {
-        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-wifi": " ({signalStrength}%)",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-linked": "{ifname} (No IP) ",
         "format": "",
@@ -114,44 +109,17 @@
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
-        //"format-source": "{volume}% ",
-        //"format-source-muted": "",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
         "format-source": "",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
             "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol",
         "on-click-right": "amixer sset Master toggle"
-    },
-
-    "wireplumber": {
-        "on-click": "pavucontrol",
-        "on-click-right": "amixer sset Master toggle 1>/dev/null",
-        //on-click: "${wpctl} set-mute @DEFAULT_AUDIO_SINK@ toggle";
-        //on-scroll-down: "${wpctl} set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 0.04+";
-        //on-scroll-up: "${wpctl} set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 0.04-";
-        "format": "<span foreground='#fab387'>{icon}</span>  {volume}%",
-        "format-muted": " ",
-        "format-source": "",
-        "format-source-muted": "",
-        //"format-muted": "<span foreground='#fab387'> </span>",
-        //"format-icons": [ "<span foreground='#fab387'></span>" ]
-        "format-icons": {
-            "headphone": " ",
-            "hands-free": " ",
-            "headset": " ",
-            "phone": " ",
-            "portable": " ",
-            "car": " ",
-            "default": [" ", " ", " "]
-        },
     },
 
     "tray": {
