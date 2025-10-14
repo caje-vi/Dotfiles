@@ -23,6 +23,7 @@ vim.opt.foldlevel = 99
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.opt.inccommand = 'split'
+
 -- Plugins
 vim.pack.add({
     {src = "https://github.com/catppuccin/nvim"},
