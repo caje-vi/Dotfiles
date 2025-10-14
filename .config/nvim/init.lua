@@ -2,6 +2,7 @@
 vim.opt.wildignorecase = true
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+vim.opt.clipboard = 'unnamedplus'
 -- Text settings
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
