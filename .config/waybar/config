@@ -10,6 +10,7 @@
         "temperature",
     ],
     "modules-center": [
+        "clock"
     ],
     "modules-right": [
         "backlight",
@@ -96,7 +97,7 @@
         //"format": " {}%", // Icon: microchip
         "format": "{max_frequency}GHz <span color=\"darkgray\">| {usage}%</span>",
         "max-length": 13,
-        "min-length": 13
+       "min-length": 13
     },
     "hyprland/window": {
         "max-length": 100,
