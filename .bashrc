@@ -66,4 +66,4 @@ ex ()
   fi
 }
 
-rustmon print -p 0
+pokemon-colorscripts -r
